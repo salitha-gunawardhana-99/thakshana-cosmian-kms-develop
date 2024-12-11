@@ -1,0 +1,282 @@
+{
+    "tag": "Message",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "Header",
+            "type": "Structure",
+            "value": [
+                {
+                    "tag": "ProtocolVersion",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "ProtocolVersionMajor",
+                            "type": "Integer",
+                            "value": 2
+                        },
+                        {
+                            "tag": "ProtocolVersionMinor",
+                            "type": "Integer",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "tag": "Timestamp",
+                    "type": "LongInteger",
+                    "value": "0x0000000067318653"
+                },
+                {
+                    "tag": "BatchCount",
+                    "type": "Integer",
+                    "value": 9
+                }
+            ]
+        },
+        {
+            "tag": "Items",
+            "type": "Structure",
+            "value": [
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "CreateKeyPair"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "OperationFailed"
+                        },
+                        {
+                            "tag": "ResultReason",
+                            "type": "Enumeration",
+                            "value": "Operation_Not_Supported"
+                        },
+                        {
+                            "tag": "ResultMessage",
+                            "type": "TextString",
+                            "value": "Unexpected server error: creation of object CalistoModemDeviceUUID failed: Database Error: error returned from database: (code: 1555) UNIQUE constraint failed: objects.id"
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Certify"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "Success"
+                        },
+                        {
+                            "tag": "ResponsePayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemDeviceUUIDCertificate"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "CreateKeyPair"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "OperationFailed"
+                        },
+                        {
+                            "tag": "ResultReason",
+                            "type": "Enumeration",
+                            "value": "Operation_Not_Supported"
+                        },
+                        {
+                            "tag": "ResultMessage",
+                            "type": "TextString",
+                            "value": "Unexpected server error: creation of object CalistoModemDeviceCertificatePrivateKey failed: Database Error: error returned from database: (code: 1555) UNIQUE constraint failed: objects.id"
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Certify"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "Success"
+                        },
+                        {
+                            "tag": "ResponsePayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemDeviceCertificate"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Create"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "OperationFailed"
+                        },
+                        {
+                            "tag": "ResultReason",
+                            "type": "Enumeration",
+                            "value": "Operation_Not_Supported"
+                        },
+                        {
+                            "tag": "ResultMessage",
+                            "type": "TextString",
+                            "value": "Unexpected server error: creation of object failed: Database Error: error returned from database: (code: 1555) UNIQUE constraint failed: objects.id"
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "CreateKeyPair"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "OperationFailed"
+                        },
+                        {
+                            "tag": "ResultReason",
+                            "type": "Enumeration",
+                            "value": "Operation_Not_Supported"
+                        },
+                        {
+                            "tag": "ResultMessage",
+                            "type": "TextString",
+                            "value": "Unexpected server error: creation of object CalistoModemKMSCertificatePrivateKey failed: Database Error: error returned from database: (code: 1555) UNIQUE constraint failed: objects.id"
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Certify"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "Success"
+                        },
+                        {
+                            "tag": "ResponsePayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemKMSCertificate"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "CreateKeyPair"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "OperationFailed"
+                        },
+                        {
+                            "tag": "ResultReason",
+                            "type": "Enumeration",
+                            "value": "Operation_Not_Supported"
+                        },
+                        {
+                            "tag": "ResultMessage",
+                            "type": "TextString",
+                            "value": "Unexpected server error: creation of object CalistoModemCACertificatePrivateKey failed: Database Error: error returned from database: (code: 1555) UNIQUE constraint failed: objects.id"
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Certify"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "Success"
+                        },
+                        {
+                            "tag": "ResponsePayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemCACertificate"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

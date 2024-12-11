@@ -1,0 +1,16 @@
+{
+    "tag": "GenerateEnrolData",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "SerialNumber",
+            "type": "Enumeration",
+            "value": "SN00001234"
+        },
+        {
+            "tag": "PartNumber",
+            "type": "Enumeration",
+            "value": "PN00001234"
+        }
+    ]
+}

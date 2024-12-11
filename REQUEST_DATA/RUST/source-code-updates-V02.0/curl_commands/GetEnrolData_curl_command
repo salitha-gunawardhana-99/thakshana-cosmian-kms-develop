@@ -1,0 +1,11 @@
+curl -v -X POST -H "Content-Type: application/json" -d '{
+    "tag": "GetEnrolData",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "UUID",
+            "type": "Enumeration",
+            "value": "<add-the-relevant-uuid>"
+        }
+    ]
+}' http://0.0.0.0:9998/kmip/2_1

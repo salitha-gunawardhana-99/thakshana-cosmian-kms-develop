@@ -1,0 +1,11 @@
+{
+	"Response": "EnrolData",
+	"DeviceType": "CalistoModem",
+	"DeviceUUID": "asfas-afasdf-afasf-afaf",
+	"DeviceUUIDCertificate": "asfas-afasdf-afasf-afaf",
+	"DeviceCertificatePrivateKey": "asdfasfda1a5sdf1a51a6f1a31f5a1df6afd16a5f1dsaf1",
+	"DeviceCertificate": "asfajf;ajsdfkajsdf;jalsjfljs;dfjaskldfj;aljsdfkj",
+	"DeviceKey": "sdf2a1df2a3sdf132as1df3a1s",
+	"KMSCertificate": "asfajf;ajsdfkajsdf;jalsjfljs;dfjaskldfj;aljsdfkj",
+	"TimeStamp": "2024-10-28 10:00:00.1234 UMT"
+}

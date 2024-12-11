@@ -1,0 +1,134 @@
+{
+	"Messages": [
+		{
+			"Request": "GenerateEnrolData",
+			"Response": "EnrolData"
+		},
+		{
+			"Request": "ReEnrolData",
+			"Response": "EnrolData"
+		}
+	],
+	"Devices": [
+		{
+			"name": "CalistoModem",
+			"Messages": [
+				{
+					"Response": "EnrolData",
+					"Requires": [
+						{
+							"name": "DeviceUUID",
+							"type": "uuid"
+						},
+						{
+							"name": "DeviceUUIDCertificate",
+							"type": "uuid"
+						},
+						{
+							"name": "DeviceCertificatePrivateKey",
+							"type": "2048asikey"
+						},
+						{
+							"name": "DeviceCertificate",
+							"type": "certificate"
+						},
+						{
+							"name": "DeviceKey",
+							"type": "256symkey"
+						},
+						{
+							"name": "KMSCertificate",
+							"type": "certificate"
+						},
+						{
+							"name": "CACertificate",
+							"type": "certificate"
+						},
+						{
+							"name": "TimeStamp",
+							"type": "time"
+						}
+					]
+				},
+				{
+					"Request": "GenerateEnrolData",
+					"Requires": [
+						{
+							"name": "DeviceType",
+							"type": "devicetype"
+						}
+					]
+				},
+				{
+					"Request": "ReEnrolData",
+					"Requires": [
+						{
+							"name": "DeviceUUID",
+							"type": "uuid"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MountedSDR",
+			"Messages": [
+				{
+					"Response": "EnrolData",
+					"Requires": [
+						{
+							"name": "DeviceUUID",
+							"type": "uuid"
+						},
+						{
+							"name": "DeviceUUIDCertificate",
+							"type": "uuid"
+						},
+						{
+							"name": "DeviceCertificatePrivateKey",
+							"type": "2048asikey"
+						},
+						{
+							"name": "DeviceCertificate",
+							"type": "certificate"
+						},
+						{
+							"name": "DeviceKey",
+							"type": "256symkey"
+						},
+						{
+							"name": "KMSCertificate",
+							"type": "certificate"
+						},
+						{
+							"name": "CACertificate",
+							"type": "certificate"
+						},
+						{
+							"name": "TimeStamp",
+							"type": "time"
+						}
+					]
+				},
+				{
+					"Request": "GenerateEnrolData",
+					"Requires": [
+						{
+							"name": "DeviceType",
+							"type": "devicetype"
+						}
+					]
+				},
+				{
+					"Request": "ReEnrolData",
+					"Requires": [
+						{
+							"name": "DeviceUUID",
+							"type": "uuid"
+						}
+					]
+				}
+			]
+		}
+	]
+}

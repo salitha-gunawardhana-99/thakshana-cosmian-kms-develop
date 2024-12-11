@@ -1,0 +1,198 @@
+{
+    "tag": "GetEnrolData",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "Header",
+            "type": "Structure",
+            "value": [
+                {
+                    "tag": "ProtocolVersion",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "ProtocolVersionMajor",
+                            "type": "Integer",
+                            "value": 2
+                        },
+                        {
+                            "tag": "ProtocolVersionMinor",
+                            "type": "Integer",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "tag": "MaximumResponseSize",
+                    "type": "Integer",
+                    "value": 9999
+                },
+                {
+                    "tag": "BatchCount",
+                    "type": "Integer",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "tag": "Items",
+            "type": "Structure",
+            "value": [
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemDeviceUUID"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemDeviceUUIDCertificate"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemDeviceCertificatePrivateKey"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemDeviceCertificate"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemDeviceKey"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemKMSCertificate"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemCACertificate"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

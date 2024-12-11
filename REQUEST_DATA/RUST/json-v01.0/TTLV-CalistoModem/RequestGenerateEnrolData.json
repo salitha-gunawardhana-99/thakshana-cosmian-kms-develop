@@ -1,0 +1,1545 @@
+{
+    "tag": "GenerateEnrolData",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "Header",
+            "type": "Structure",
+            "value": [
+                {
+                    "tag": "ProtocolVersion",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "ProtocolVersionMajor",
+                            "type": "Integer",
+                            "value": 2
+                        },
+                        {
+                            "tag": "ProtocolVersionMinor",
+                            "type": "Integer",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "tag": "MaximumResponseSize",
+                    "type": "Integer",
+                    "value": 9999
+                },
+                {
+                    "tag": "BatchCount",
+                    "type": "Integer",
+                    "value": 9
+                }
+            ]
+        },
+        {
+            "tag": "Items",
+            "type": "Structure",
+            "value": [
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "CreateKeyPair"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "CommonAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        },
+                                        {
+                                            "tag": "VendorAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "tag"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "5B2243616C6973746F4D6F64656D446576696365555549445F546167225D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "PrivateKeyAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        },
+                                        {
+                                            "tag": "UniqueIdentifier",
+                                            "type": "TextString",
+                                            "value": "CalistoModemDeviceUUID"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "PublicKeyAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Certify"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemDeviceUUID_pk"
+                                },
+                                {
+                                    "tag": "Attributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CertificateAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "CertificateSubjectCn",
+                                                    "type": "TextString",
+                                                    "value": "projects@athakshana.com"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectO",
+                                                    "type": "TextString",
+                                                    "value": "Thakshana"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectOu",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectEmail",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectC",
+                                                    "type": "TextString",
+                                                    "value": "SL"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectSt",
+                                                    "type": "TextString",
+                                                    "value": "Western"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectL",
+                                                    "type": "TextString",
+                                                    "value": "Colombo"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectUid",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectSerialNumber",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectTitle",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectDc",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectDnQualifier",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerCn",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerO",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerOu",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerEmail",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerC",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerSt",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerL",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerUid",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerSerialNumber",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerTitle",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerDc",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerDnQualifier",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "Certificate"
+                                        },
+                                        {
+                                            "tag": "UniqueIdentifier",
+                                            "type": "TextString",
+                                            "value": "CalistoModemDeviceUUIDCertificate"
+                                        },
+                                        {
+                                            "tag": "VendorAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "requested_validity_days"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "333635"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "tag"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "5B2243616C6973746F4D6F64656D4465766963655555494443657274696669636174655F546167225D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "CreateKeyPair"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "CommonAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        },
+                                        {
+                                            "tag": "VendorAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "tag"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "5B2243616C6973746F4D6F64656D4465766963654365727469666963617465507269766174654B65795F546167225D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "PrivateKeyAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        },
+                                        {
+                                            "tag": "UniqueIdentifier",
+                                            "type": "TextString",
+                                            "value": "CalistoModemDeviceCertificatePrivateKey"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "PublicKeyAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Certify"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemDeviceCertificatePrivateKey_pk"
+                                },
+                                {
+                                    "tag": "Attributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CertificateAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "CertificateSubjectCn",
+                                                    "type": "TextString",
+                                                    "value": "projects@athakshana.com"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectO",
+                                                    "type": "TextString",
+                                                    "value": "Thakshana"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectOu",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectEmail",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectC",
+                                                    "type": "TextString",
+                                                    "value": "SL"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectSt",
+                                                    "type": "TextString",
+                                                    "value": "Western"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectL",
+                                                    "type": "TextString",
+                                                    "value": "Colombo"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectUid",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectSerialNumber",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectTitle",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectDc",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectDnQualifier",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerCn",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerO",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerOu",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerEmail",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerC",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerSt",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerL",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerUid",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerSerialNumber",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerTitle",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerDc",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerDnQualifier",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "Certificate"
+                                        },
+                                        {
+                                            "tag": "UniqueIdentifier",
+                                            "type": "TextString",
+                                            "value": "CalistoModemDeviceCertificate"
+                                        },
+                                        {
+                                            "tag": "VendorAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "requested_validity_days"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "333635"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "tag"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "5B2243616C6973746F4D6F64656D44657669636543657274696669636174655F546167225D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Create"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "ObjectType",
+                                    "type": "Enumeration",
+                                    "value": "SymmetricKey"
+                                },
+                                {
+                                    "tag": "Attributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "AES"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 256
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2108
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentSymmetricKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "SymmetricKey"
+                                        },
+                                        {
+                                            "tag": "UniqueIdentifier",
+                                            "type": "TextString",
+                                            "value": "CalistoModemDeviceKey"
+                                        },
+                                        {
+                                            "tag": "VendorAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "tag"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "5B2243616C6973746F4D6F64656D4465766963654B65795F546167225D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "CreateKeyPair"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "CommonAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        },
+                                        {
+                                            "tag": "VendorAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "tag"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "5B2243616C6973746F4D6F64656D4B4D534365727469666963617465507269766174654B65795F546167225D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "PrivateKeyAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        },
+                                        {
+                                            "tag": "UniqueIdentifier",
+                                            "type": "TextString",
+                                            "value": "CalistoModemKMSCertificatePrivateKey"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "PublicKeyAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Certify"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemKMSCertificatePrivateKey_pk"
+                                },
+                                {
+                                    "tag": "Attributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CertificateAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "CertificateSubjectCn",
+                                                    "type": "TextString",
+                                                    "value": "projects@athakshana.com"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectO",
+                                                    "type": "TextString",
+                                                    "value": "Thakshana"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectOu",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectEmail",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectC",
+                                                    "type": "TextString",
+                                                    "value": "SL"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectSt",
+                                                    "type": "TextString",
+                                                    "value": "Western"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectL",
+                                                    "type": "TextString",
+                                                    "value": "Colombo"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectUid",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectSerialNumber",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectTitle",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectDc",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectDnQualifier",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerCn",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerO",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerOu",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerEmail",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerC",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerSt",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerL",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerUid",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerSerialNumber",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerTitle",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerDc",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerDnQualifier",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "Certificate"
+                                        },
+                                        {
+                                            "tag": "UniqueIdentifier",
+                                            "type": "TextString",
+                                            "value": "CalistoModemKMSCertificate"
+                                        },
+                                        {
+                                            "tag": "VendorAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "requested_validity_days"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "333635"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "tag"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "5B2243616C6973746F4D6F64656D4B4D5343657274696669636174655F546167225D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "CreateKeyPair"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "CommonAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        },
+                                        {
+                                            "tag": "VendorAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "tag"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "5B2243616C6973746F4D6F64656D43414365727469666963617465507269766174654B65795F546167225D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "PrivateKeyAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        },
+                                        {
+                                            "tag": "UniqueIdentifier",
+                                            "type": "TextString",
+                                            "value": "CalistoModemCACertificatePrivateKey"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "PublicKeyAttributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CryptographicAlgorithm",
+                                            "type": "Enumeration",
+                                            "value": "RSA"
+                                        },
+                                        {
+                                            "tag": "CryptographicLength",
+                                            "type": "Integer",
+                                            "value": 2048
+                                        },
+                                        {
+                                            "tag": "CryptographicUsageMask",
+                                            "type": "Integer",
+                                            "value": 2097152
+                                        },
+                                        {
+                                            "tag": "KeyFormatType",
+                                            "type": "Enumeration",
+                                            "value": "TransparentRSAPrivateKey"
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "PrivateKey"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Certify"
+                        },
+                        {
+                            "tag": "RequestPayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "CalistoModemCACertificatePrivateKey_pk"
+                                },
+                                {
+                                    "tag": "Attributes",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CertificateAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "CertificateSubjectCn",
+                                                    "type": "TextString",
+                                                    "value": "projects@athakshana.com"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectO",
+                                                    "type": "TextString",
+                                                    "value": "Thakshana"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectOu",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectEmail",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectC",
+                                                    "type": "TextString",
+                                                    "value": "SL"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectSt",
+                                                    "type": "TextString",
+                                                    "value": "Western"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectL",
+                                                    "type": "TextString",
+                                                    "value": "Colombo"
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectUid",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectSerialNumber",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectTitle",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectDc",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateSubjectDnQualifier",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerCn",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerO",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerOu",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerEmail",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerC",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerSt",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerL",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerUid",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerSerialNumber",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerTitle",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerDc",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                },
+                                                {
+                                                    "tag": "CertificateIssuerDnQualifier",
+                                                    "type": "TextString",
+                                                    "value": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "tag": "ObjectType",
+                                            "type": "Enumeration",
+                                            "value": "Certificate"
+                                        },
+                                        {
+                                            "tag": "UniqueIdentifier",
+                                            "type": "TextString",
+                                            "value": "CalistoModemCACertificate"
+                                        },
+                                        {
+                                            "tag": "VendorAttributes",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "requested_validity_days"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "333635"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "tag": "VendorAttributes",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "VendorIdentification",
+                                                            "type": "TextString",
+                                                            "value": "cosmian"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeName",
+                                                            "type": "TextString",
+                                                            "value": "tag"
+                                                        },
+                                                        {
+                                                            "tag": "AttributeValue",
+                                                            "type": "ByteString",
+                                                            "value": "5B2243616C6973746F4D6F64656D434143657274696669636174655F546167225D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

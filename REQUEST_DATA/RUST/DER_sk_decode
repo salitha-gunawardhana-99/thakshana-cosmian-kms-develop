@@ -1,0 +1,39 @@
+from cryptography.hazmat.primitives import serialization
+
+def extract_raw_private_key_from_der(der_encoded_key):
+    """
+    Extract the raw private key from the given DER encoded key as bytes for RSA private keys.
+    
+    :param der_encoded_key: DER encoded private key as bytes
+    :return: Raw private key in bytes (or hexadecimal string for readability)
+    """
+    # Deserialize the private key from DER format
+    private_key = serialization.load_der_private_key(
+        der_encoded_key,
+        password=None
+    )
+    
+    # Extract the private key value for RSA (d in RSA)
+    if isinstance(private_key, serialization.PrivateKey):
+        private_numbers = private_key.private_numbers()
+        # For RSA, the private key is stored in the 'd' value, which is part of the private_numbers
+        private_key_bytes = private_numbers.d.to_bytes(
+            (private_numbers.d.bit_length() + 7) // 8,
+            'big'
+        )
+    else:
+        raise ValueError("The provided key is not an RSA private key.")
+    
+    # Return the raw private key in bytes (can be printed as hex for readability)
+    return private_key_bytes.hex()
+
+
+# Example usage:
+# DER encoded private key (in bytes)
+der_encoded_private_key = bytes.fromhex(
+    '3082010A0282010100A2A4EF812B29A5A79C0481078CA58ED63218091165241380FA5DB1E925CC4DDFAE599EBBB91CA1B9DE67C8A5795092B00B55264E960DE1FF2DD050CBEC2A2C00EC3430CFCB20BDEF05561285C413C2C6529DC24FD5F42B72FC0B1FAA91DC7FABCBA749D3A0C7A7AB36CF5D007583A4F80D10FCE60CBA1F97CCF04AD98037322B86D9EF872B2B1E7D5EA0DCA97F563577D630F030210286473AB7C898D02E88916ABAC5AECA39B339784B63A06FC9CD343E2C08EB1C15A50E584802615AB6C941C9226E8E7DF1E24F15D13C4E9232249044782BFB73B08E29C0CC89B613DBF15A924379714252F62B8E05A6372469A725F8A9CC91BA181C46E9ABF4DB7587F5E30203010001'
+)
+
+# Extract and print the raw private key in hexadecimal format (plain text)
+private_key_raw = extract_raw_private_key_from_der(der_encoded_private_key)
+print(f"Raw Private Key (Hex):\n{private_key_raw}")

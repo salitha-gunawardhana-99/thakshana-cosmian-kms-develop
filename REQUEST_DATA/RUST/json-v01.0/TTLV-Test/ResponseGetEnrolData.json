@@ -1,0 +1,339 @@
+{
+    "tag": "Message",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "Header",
+            "type": "Structure",
+            "value": [
+                {
+                    "tag": "ProtocolVersion",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "ProtocolVersionMajor",
+                            "type": "Integer",
+                            "value": 2
+                        },
+                        {
+                            "tag": "ProtocolVersionMinor",
+                            "type": "Integer",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "tag": "Timestamp",
+                    "type": "LongInteger",
+                    "value": "0x00000000672DA77D"
+                },
+                {
+                    "tag": "BatchCount",
+                    "type": "Integer",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "tag": "Items",
+            "type": "Structure",
+            "value": [
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "Success"
+                        },
+                        {
+                            "tag": "ResponsePayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "ObjectType",
+                                    "type": "Enumeration",
+                                    "value": "SymmetricKey"
+                                },
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "aesid"
+                                },
+                                {
+                                    "tag": "Object",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "KeyBlock",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "KeyFormatType",
+                                                    "type": "Enumeration",
+                                                    "value": "Raw"
+                                                },
+                                                {
+                                                    "tag": "KeyValue",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "KeyMaterial",
+                                                            "type": "Structure",
+                                                            "value": [
+                                                                {
+                                                                    "tag": "ByteString",
+                                                                    "type": "ByteString",
+                                                                    "value": "1B5279F78F58CC1D9D343BB272A028223E691BEA40B1C50A08B70566AA88B756"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "tag": "Attributes",
+                                                            "type": "Structure",
+                                                            "value": [
+                                                                {
+                                                                    "tag": "CryptographicAlgorithm",
+                                                                    "type": "Enumeration",
+                                                                    "value": "AES"
+                                                                },
+                                                                {
+                                                                    "tag": "CryptographicLength",
+                                                                    "type": "Integer",
+                                                                    "value": 256
+                                                                },
+                                                                {
+                                                                    "tag": "CryptographicUsageMask",
+                                                                    "type": "Integer",
+                                                                    "value": 2108
+                                                                },
+                                                                {
+                                                                    "tag": "KeyFormatType",
+                                                                    "type": "Enumeration",
+                                                                    "value": "Raw"
+                                                                },
+                                                                {
+                                                                    "tag": "ObjectType",
+                                                                    "type": "Enumeration",
+                                                                    "value": "SymmetricKey"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "tag": "CryptographicAlgorithm",
+                                                    "type": "Enumeration",
+                                                    "value": "AES"
+                                                },
+                                                {
+                                                    "tag": "CryptographicLength",
+                                                    "type": "Integer",
+                                                    "value": 256
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "Success"
+                        },
+                        {
+                            "tag": "ResponsePayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "ObjectType",
+                                    "type": "Enumeration",
+                                    "value": "PrivateKey"
+                                },
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "rsaid"
+                                },
+                                {
+                                    "tag": "Object",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "KeyBlock",
+                                            "type": "Structure",
+                                            "value": [
+                                                {
+                                                    "tag": "KeyFormatType",
+                                                    "type": "Enumeration",
+                                                    "value": "PKCS1"
+                                                },
+                                                {
+                                                    "tag": "KeyValue",
+                                                    "type": "Structure",
+                                                    "value": [
+                                                        {
+                                                            "tag": "KeyMaterial",
+                                                            "type": "Structure",
+                                                            "value": [
+                                                                {
+                                                                    "tag": "ByteString",
+                                                                    "type": "ByteString",
+                                                                    "value": "3082092A0201000282020100AD640A02558D57E5E51860C602BA059F5E63DD95963037BCF847716E26ACF2130F48978D5BD197BD3055A28EFABFFF0CDEF9AEE1054C080168427D8C049E6B7EB20452F2F38F8255498A9D33ECE156487A16E022B325B2E28E31FB21831069A0BFE5460E0E7A13D6F38797DF4569138D6AFE74C6C856486614746E5FC9777AFAF598AC387E71F731E5652E9AABA8D11BB8681D919CE47BA2A12640637462C623DF215BA44E1C15F9A480E178D30BF2B651FD5BBDE5B6A236B35ABB2714D5C69E9552D1D5B31FFDB890489EF8C33BD2A3D768C473DADF3331E023ABE8E1734C91461F89298FCBC2F14F9D7E5AF955ADE803AEFCEBBA7D6CE2C5305ABF8C69A02C75C54F0E2DCE5284DE92ECDAE137547F71E8F3981B871AE1D20A1344B4407A010EB1A2D835A710CE0F6289326F81332FC412061BCE671CB2D383D79294A310D707A9A72A3D498BE525C7C57CE1ABD390697241D62C797D131D6A53CC77A7D3641B715992A5B763F1EDD156F8C84DD1F1E5BF018A7920AD4A0C8F7572B0DC9D5A66BBFBF47E3FDD800BFBDF51C59DD5C330498832B7200CB5824E789CCB0B91B2F1ADF3353380354902410BED2F7D40D07E526C69E78C7229424B55CF99228895AFE30699D061738D2AE92F3BC64B4421E1B48B813EE13DACFF6DEA4F572749C4CB8FAB378E9B7DC03F0A23BEC5FB882964E65A2BEFFDCCE8F0B718EE67A1ACF70203010001028202000E61C9E2BFADE5A8900421A2CAFF1B104908078D2CD3FB0B959C7770278D18D733E15590C818EE7926D53392A081E469F0E4CCF8A533D546289BBB462DEBE606B045638BFB5FDFF3AB11F0502A49D69A54662959377ADD07A5BBC794D4063C7CB4EE138D7EEDE94F5F0BD43114D4CE66608592B21A53EDD569C4EE92CB6739B02F46E6A218FAE3022480EC08B04C646BE433DEA0015F8251CF04193B26A03AC726EEE167138388DF18220891B90FB8A61ECEE11933409EDBE2AC97F179ECF1789DF22CAD891A123588E23D2D6D243D2891E982C20959922984E9F08C7486D7C70506009E8DEADCD49F41F5051EC158977216C5ABD7E02773F7DF36E7C481CE633E94D299F03B8CDA74D2CA9E30148EA2167140A4347F7369ED97E7EED7185C147723213E41252A5F5F0E60A467BE9F49D2133B980510CF93899CDB45DE7E64B0D7772DC6708D0645F62403C6D4C967A1CBB0F5BE2A38D86893A6E9A18B31117484C2FB74F374ED53D058E06A6E6556F10FE856F1A77D5D0818569B1202C1C498B5283D3D3930209D98A24D585C1DB8B06F33FC96EF8B997A02A66B1FD6B093341771D24E5A0BD94C6D6195042923B13B4705BDA55115CD4602403865034D07E8E596520A7030E0323CD901DA26DB001A32C13B9879F2F49C61ADC1F75CDE06FFEAE9DADBAD91FC3D311BF6F063FF8F3AAC20B87E3CF3DF8865881E274B3F30E10282010100E7E5DAC411A0FB9BDBECB3F811D16A895BEB8A3FCC5231A03FC41C239A70D4DD90975FCEB62501C98DCDA185A083B9F14FD2414131D7E21307115DAA22017EA8B8A2446AE2A9CD491FDDEF81AC26BB343AF7B49E4BADF3773EA144D12570953172439D220FBF2F24949F8D795C0AB31AD2EE76EC6514194508B73A802A80AD05BA9A78953D4246929E09F52097B26AC2B25561BC413BEB94BE00565E6BEF89CB6486586AB236BE73F20E71FDCD60DB79DD6AFA724F46FC9303D0D56847D509B2BB835BA212B91D8A4C04EB807B787C235A8D0DFF222BE4C09177ECE911E6C2A35ACDF71D7DFA535860208C27BEEF61AD25FE08A1382393170A1B4A9AD0D5123B0282010100BF6979FFC1E03E53BD44DBF8B90A6CC1AAD615A36AB9B806901D64A22EC21EFA468D26E77A7302EFB7C03EC2D47FAF798A0D048F3B2190B1D39639BB8817E87DFBC444279A8209710DEBA11A43A306E10457725270C25F2864EE7C07569D1F6B118FAE2063C60FD8926D77360359491C7301F31230BA6C343B79E2018239AF69E0440FA445D31EDA28102658AB474E74B94589991D6CA6FC679AE81E4335EFF31B1934AF2C9A7EEB5A82BC534EE759E56766F15A2C9021F534F47176C7511CA72B6A6C341A8EE3251B04B9E1AFED03A6FCEA28789EE6C4E4992FA62131380EAB0D363935BC591F245E93508E6991BE65DC0A3252235080728895FB2FEBA388750282010100B8332B2F5CF56B86A50D82F2C46C7CDC78C842BB6477D17581D12BACD82B51DA60D4ECC44C885EC013C447CDD5EF6C4E92E1E6F57B3B0917A620942EE4EE1D06B60A26A064450E8C4C24C4EF52A83D4142A9A9ADA75D982B9AF30CAFB8B691BB8210D50ACE494590200210A55A882136686004D4C7814C853A6418B2DF8FF05FC1969BBBA7BA32469A043CD2D3CC63E31D3696F8AB34866F52F0FFA9E6C091CA9EA1DC2F7C39E1D4456C55FD8D1AA79B485686733027A9CEB954337FAEB73909E0CA7989E6A76620893BCB38F65A80F8B01FA50388C826DF136D982096189F789453503BFBEA5033BDBF7CB4C1847228D029D5FF0191B86FAF96780F3B5C542B0282010100922500670C2A20AC63184E338B64B040F624DB04989A102DC29F0E94DDCA8D485DD1ABE0951777287C4DA61DAF8D85F6F0369C4297CD3AE2EB4009F86B2285FA9ADDF183A36EA1B2D604104F3351281169F5326E4B75BC9DE4E2498478D72283E736A2A64C478F15B64729FBED76A061BE55C0B724C9519057D0E984695F8DD4F2CC447D126AED6577AD4CF9EA5C5944B9A8A43469C8E97E51C46E719CB373EF53C35CFC5ABBE327E3456A70D90FBF0D6E73A4D74AAB09A264BA365F90331803731CA05CEFE224FFD1AF3C155AF346149B8A5538336AD2EE0F1FD86203685F9AAE4DB64496F81CD4F1F8DC4ABFC3ED716C1DC4E9FDD89B19D7BB5BBBECD841790282010100C4E710C558E702E3DA140B0932ACB80EC4D43AD8539A0E2B635588A855838214C04BB522225C6672BFB5DBD678E39A3C19657E5DBC98FC95E543330A65B3C74501BFAF7A2F7C40749379679D928FB4816CFA8D71E56239F295016DF2E52D8AB55FBD29AC52ECEE9F6E48ED5A14F4C6AF13F7B44CDDADF1D58A6BBF3AB59D5B5EEBDABFDA8F42244DE1ECACD53D4BD69D1E2722B3E5140F619AF3DB1052DC08D5E3B92105EE60D5AEC33B08010F113468707BEA192C9FCA2AF48605A14A5AE6D1A924489393FBE0C7860D91E9107B67509CE1183D27F941AB694DE77FA8B274AAEEF86692A59D0BE99B86E73E8BE5A31125851380FFF2B985ED00C8DFA1DC9C50"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "tag": "Attributes",
+                                                            "type": "Structure",
+                                                            "value": [
+                                                                {
+                                                                    "tag": "CryptographicAlgorithm",
+                                                                    "type": "Enumeration",
+                                                                    "value": "RSA"
+                                                                },
+                                                                {
+                                                                    "tag": "CryptographicLength",
+                                                                    "type": "Integer",
+                                                                    "value": 4092
+                                                                },
+                                                                {
+                                                                    "tag": "CryptographicParameters",
+                                                                    "type": "Structure",
+                                                                    "value": [
+                                                                        {
+                                                                            "tag": "CryptographicAlgorithm",
+                                                                            "type": "Enumeration",
+                                                                            "value": "RSA"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "tag": "CryptographicUsageMask",
+                                                                    "type": "Integer",
+                                                                    "value": 2097152
+                                                                },
+                                                                {
+                                                                    "tag": "KeyFormatType",
+                                                                    "type": "Enumeration",
+                                                                    "value": "TransparentRSAPrivateKey"
+                                                                },
+                                                                {
+                                                                    "tag": "Link",
+                                                                    "type": "Structure",
+                                                                    "value": [
+                                                                        {
+                                                                            "tag": "Link",
+                                                                            "type": "Structure",
+                                                                            "value": [
+                                                                                {
+                                                                                    "tag": "LinkType",
+                                                                                    "type": "Enumeration",
+                                                                                    "value": "PublicKeyLink"
+                                                                                },
+                                                                                {
+                                                                                    "tag": "LinkedObjectIdentifier",
+                                                                                    "type": "TextString",
+                                                                                    "value": "70e034f4-3cf9-4efe-9762-fcadbfd2014a"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "tag": "ObjectType",
+                                                                    "type": "Enumeration",
+                                                                    "value": "PrivateKey"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "tag": "CryptographicAlgorithm",
+                                                    "type": "Enumeration",
+                                                    "value": "RSA"
+                                                },
+                                                {
+                                                    "tag": "CryptographicLength",
+                                                    "type": "Integer",
+                                                    "value": 4096
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "Items",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "Operation",
+                            "type": "Enumeration",
+                            "value": "Get"
+                        },
+                        {
+                            "tag": "ResultStatus",
+                            "type": "Enumeration",
+                            "value": "Success"
+                        },
+                        {
+                            "tag": "ResponsePayload",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "ObjectType",
+                                    "type": "Enumeration",
+                                    "value": "Certificate"
+                                },
+                                {
+                                    "tag": "UniqueIdentifier",
+                                    "type": "TextString",
+                                    "value": "selfcertid"
+                                },
+                                {
+                                    "tag": "Object",
+                                    "type": "Structure",
+                                    "value": [
+                                        {
+                                            "tag": "CertificateType",
+                                            "type": "Enumeration",
+                                            "value": "X509"
+                                        },
+                                        {
+                                            "tag": "CertificateValue",
+                                            "type": "ByteString",
+                                            "value": "3082055B30820343A003020102021500DD390B01DB8F316F7FB0169442007D3D5E525543300D06092A864886F70D01010B050030673120301E06035504030C1770726F6A6563747340617468616B7368616E612E636F6D310B300906035504061302534C3110300E06035504080C075765737465726E3110300E06035504070C07436F6C6F6D626F31123010060355040A0C095468616B7368616E61301E170D3234313130373132313230345A170D3235313130373132313230345A30673120301E06035504030C1770726F6A6563747340617468616B7368616E612E636F6D310B300906035504061302534C3110300E06035504080C075765737465726E3110300E06035504070C07436F6C6F6D626F31123010060355040A0C095468616B7368616E6130820222300D06092A864886F70D01010105000382020F003082020A0282020100C33FC4BEFA8E1E4AC8C3969D63095C7FE0C77609F1EC939E0A3EBC43DB0BDD16A47D56588316A90DE2CC9472CB5222CD6DEAF007CC3020ADD79093272E299F5CD9F69903523D64A0C55AF78FB8A70CD73F25873F799EEE9C95E1057F811D8F6B8718DD56C1C5ED1004CAFC3C90D0D80B52EF2DA8374E7CFAEEC9EE546C4EE6833F9592BBDF468CAA2CE78F8405CFE0F91C803BC4533C9922AD3491AA22378733D0726E44243363C9C55DB18692B2F69E40F6AE3724C268FF666569E950C2855F6BC52B7D1C307B2DF15325B2CF42DCC81DCE339841C48242E427970603AA6B3667A7C4FBCC2D421AC98DEDBB2A6FB82EF2873452EF57A8369914CCDEF90100B474B226C432124A3CDB2BD0BF76867CA79D360618209A77A618765B8A022D5B9237810888DE2599CDC83606069352069B143A9E6C4FA5BF326ED6A4710402BFB29B2502814187B60A7B20650A9455D2A2AE483401A4673869177CF5ED983F516EA5EA87D901A98BC14F0B49304802A7B15EFF0D1B22B34C972BA8E4FB8460BE89367E32A9A027B07DF5852325DB4081E6CAD87DFDEC8596B51B3209FD0401BF3A226DCCBC1FC65A8B7B8050FE583B4D2C6795DE0BD1FAF9E7D84E85451F62291E54935E263A2455DA2A4D3EC64B06D8900A8E1240DBF0A151D9E1E7F1A1EEE5C8C81E2371E3D5938B892ABDD15210FC6F6C1D3F1483CD815683469200AE19FA230203010001300D06092A864886F70D01010B050003820201005932703348E962C638ABB9B607391E11915025860871113C2294E8B42DC311E2F141A2DD897D32C16D4F0FEAA77D81803C21DC6146A22D1F5D338B72056424C35BCE01680F8B05DE5051DA4F1730D98BCDCC7A90C1F9EE56CE51318419F70382D83C5105DFFE329C50877A19A6F724B7D89FBDEB8A932F8699FDC5ED448F6E39CDC336EB94892E033DC23A1B2740485D0D247F32B2CF91B89E94C08D487ECFAED88781B3AF82AD8CE54BB19250F7B9E5EDC62A6BA6F5C06E8637562B8CDAD044DCF14154337D7C4CF39EAB13900BED64A54976D5BA2700330CF483B9AD9BBC48CEA03E19E84D101DE5320277961587C5DFC18DD01EAC59FC542B60BB68EBEDB495A6BEB3C2A1197E5DE3FE02D9A37E674E46F3F5515DC8C2F4DFE6B7DFC19BEB233B651A6D37AC8E8CA30B62CB1F609435BEBD2FB943564CC6388D603CC3BFC5D0AD4F790E3D314D89F90AE10D4E84DC072C0113FF00A2982C0A9F0A81BCB5986020EF02CABBD2397AC36BCFF1E273B8819CFB313B0387BDD7EA7365131E29AEB85C4FB40A8E8AEB9E2098CECBDCF6A38EEA73E2E98F84B469F2AE4E528AB10435F3227C1BAFBE4833003527E59CEAB8938A84D566EE8ED00949845950B9CE261FDE4DBEFC8F3EDFE8E5E1964F12C10CC1FD5C96C4B91FDA45DB24421D2B19ED4DB2A29F216308CC3E52B55523FC714CDCA4AC401995502EB6D6C877C28F1461"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

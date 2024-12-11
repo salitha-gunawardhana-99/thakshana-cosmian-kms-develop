@@ -1,0 +1,46 @@
+{
+    "tag": "GenerateEnrolDataResponse",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "DeviceUUID",
+            "type": "TextString",
+            "value": "9c1096a1-95f4-4f6d-8142-8b959013cc1f"
+        },
+        {
+            "tag": "KMSKeys",
+            "type": "TextString",
+            "value": "Success"
+        },
+        {
+            "tag": "KMSCertificate",
+            "type": "TextString",
+            "value": "Success"
+        },
+        {
+            "tag": "DeviceKey",
+            "type": "TextString",
+            "value": "Success"
+        },
+        {
+            "tag": "DeviceKeys",
+            "type": "TextString",
+            "value": "Success"
+        },
+        {
+            "tag": "DeviceCertificate",
+            "type": "TextString",
+            "value": "Success"
+        },
+        {
+            "tag": "DeviceUUIDKeys",
+            "type": "TextString",
+            "value": "Success"
+        },
+        {
+            "tag": "DeviceUUIDCertificate",
+            "type": "TextString",
+            "value": "Success"
+        }
+    ]
+}

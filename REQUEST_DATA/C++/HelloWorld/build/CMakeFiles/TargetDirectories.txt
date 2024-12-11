@@ -1,0 +1,3 @@
+/home/thakshana/Desktop/THAKSHANA/thakshana-cosmian-kms/REQUEST_FROM_KMS/C++/HelloWorld/build/CMakeFiles/HelloWorld.dir
+/home/thakshana/Desktop/THAKSHANA/thakshana-cosmian-kms/REQUEST_FROM_KMS/C++/HelloWorld/build/CMakeFiles/edit_cache.dir
+/home/thakshana/Desktop/THAKSHANA/thakshana-cosmian-kms/REQUEST_FROM_KMS/C++/HelloWorld/build/CMakeFiles/rebuild_cache.dir

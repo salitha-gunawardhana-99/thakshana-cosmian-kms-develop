@@ -1,0 +1,11 @@
+{
+  "tag": "Destroy",
+  "type": "Structure",
+  "value": [
+    {
+      "tag": "UniqueIdentifier",
+      "type": "TextString",
+      "value": "8eb19f00-e191-455c-a766-f10cd29c5fee"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "Alice Smith",
+            "age": 20,
+            "major": "Computer Science",
+            "enrolled": true
+        },
+        {
+            "id": 2,
+            "name": "Bob Johnson",
+            "age": 22,
+            "major": "Mathematics",
+            "enrolled": true
+        },
+        {
+            "id": 3,
+            "name": "Charlie Brown",
+            "age": 19,
+            "major": "Literature",
+            "enrolled": false
+        }
+    ]
+}

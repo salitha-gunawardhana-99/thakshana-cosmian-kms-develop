@@ -1,0 +1,69 @@
+{
+    "tag": "Create",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "ObjectType",
+            "type": "Enumeration",
+            "value": "SymmetricKey"
+        },
+        {
+            "tag": "Attributes",
+            "type": "Structure",
+            "value": [
+                {
+                    "tag": "CryptographicAlgorithm",
+                    "type": "Enumeration",
+                    "value": "AES"
+                },
+                {
+                    "tag": "CryptographicLength",
+                    "type": "Integer",
+                    "value": 256
+                },
+                {
+                    "tag": "CryptographicUsageMask",
+                    "type": "Integer",
+                    "value": 2108
+                },
+                {
+                    "tag": "KeyFormatType",
+                    "type": "Enumeration",
+                    "value": "TransparentSymmetricKey"
+                },
+                {
+                    "tag": "ObjectType",
+                    "type": "Enumeration",
+                    "value": "SymmetricKey"
+                },
+                {
+                    "tag": "VendorAttributes",
+                    "type": "Structure",
+                    "value": [
+                        {
+                            "tag": "VendorAttributes",
+                            "type": "Structure",
+                            "value": [
+                                {
+                                    "tag": "VendorIdentification",
+                                    "type": "TextString",
+                                    "value": "cosmian"
+                                },
+                                {
+                                    "tag": "AttributeName",
+                                    "type": "TextString",
+                                    "value": "tag"
+                                },
+                                {
+                                    "tag": "AttributeValue",
+                                    "type": "ByteString",
+                                    "value": "5B5D"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

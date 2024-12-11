@@ -1,0 +1,16 @@
+curl -v -X POST -H "Content-Type: application/json" -d '{                             
+    "tag": "GenerateEnrolData",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "SerialNumber",
+            "type": "Enumeration",
+            "value": "SN00001234"
+        },
+        {
+            "tag": "PartNumber",
+            "type": "Enumeration",
+            "value": "PN00001234"
+        }
+    ]
+}' http://0.0.0.0:9998/kmip/2_1

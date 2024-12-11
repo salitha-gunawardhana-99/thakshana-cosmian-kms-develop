@@ -1,0 +1,11 @@
+{
+    "tag": "GetEnrolData",
+    "type": "Structure",
+    "value": [
+        {
+            "tag": "UUID",
+            "type": "Enumeration",
+            "value": "<add-the-relevant-uuid>"
+        }
+    ]
+}
