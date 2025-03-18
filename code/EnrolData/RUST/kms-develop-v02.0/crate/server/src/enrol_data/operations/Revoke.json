@@ -1,0 +1,16 @@
+{
+  "tag": "Revoke",
+  "type": "Structure",
+  "value": [
+    {
+      "tag": "UniqueIdentifier",
+      "type": "TextString",
+      "value": "not-created-yet"
+    },
+    {
+      "tag": "RevocationReason",
+      "type": "TextString",
+      "value": "Compromise"
+    }
+  ]
+}

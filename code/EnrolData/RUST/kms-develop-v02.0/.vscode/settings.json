@@ -1,0 +1,75 @@
+{
+  "cSpell.words": [
+    "actix",
+    "ascii",
+    "canonicalize",
+    "chacha",
+    "ciphertext",
+    "ciphertexts",
+    "ckms",
+    "cleartext",
+    "cloudproof",
+    "cosmian",
+    "Cosmian",
+    "covercrypt",
+    "Covercrypt",
+    "ECDH",
+    "ecies",
+    "ECIES",
+    "findex",
+    "Findex",
+    "gpsw",
+    "Gpsw",
+    "jwks",
+    "keypair",
+    "kmip",
+    "KMIP",
+    "mozilla",
+    "mysql",
+    "nginx",
+    "openssl",
+    "pkcs",
+    "pkey",
+    "postgres",
+    "postgresql",
+    "recv",
+    "Seedable",
+    "sqlcipher",
+    "sqlite",
+    "Sqlite",
+    "structopt",
+    "TFHE",
+    "tokio",
+    "ttlv",
+    "uids",
+    "Upserted",
+    "upserting",
+    "Upserting",
+    "uuid",
+    "Uuid",
+    "zeroizable",
+    "zerorize"
+  ],
+  "[md]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 4
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 4
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "rust-analyzer.check.command": "clippy",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "rust-analyzer.showUnlinkedFileNotification": false
+}

@@ -1,0 +1,11 @@
+{
+  "tag": "Get",
+  "type": "Structure",
+  "value": [
+    {
+      "tag": "UniqueIdentifier",
+      "type": "TextString",
+      "value": ""
+    }
+  ]
+}

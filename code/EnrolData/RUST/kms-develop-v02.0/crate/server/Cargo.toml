@@ -1,0 +1,205 @@
+[package]
+name = "cosmian_kms_server"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+description = "Cosmian Key Management Service"
+
+[[bin]]
+name = "cosmian_kms_server"
+path = "src/main.rs"
+test = false
+
+[lib]
+# doc test linking as a separate binary is extremely slow
+# and is not needed for internal lib
+doctest = false
+
+[features]
+# Do not verify auth0 token expiration date and https ssl is auto-signed (to avoid to be banned by letsencrypt)
+insecure = []
+# The binary won't start after a date chosen at compile-time
+timeout = []
+# Enable FIPS module feature build. KMS builds in FIPS mode when this is enabled.
+fips = ["cosmian_kmip/fips"]
+
+[dependencies]
+actix-cors = "0.6"
+actix-identity = "0.6"
+actix-rt = { workspace = true }
+actix-service = "2.0"
+actix-tls = "3.4"
+actix-web = { workspace = true, features = ["macros", "openssl"] }
+alcoholic_jwt = "4091"
+async-recursion = "1.1"
+async-trait = "0.1"
+base64 = { workspace = true }
+chrono = { workspace = true }
+clap = { workspace = true, features = [
+  "help",
+  "env",
+  "std",
+  "usage",
+  "error-context",
+  "derive",
+  "cargo",
+] }
+cloudproof = { workspace = true }
+cloudproof_findex = { version = "5.0", features = ["findex-redis"] }
+cosmian_kmip = { path = "../kmip" }
+cosmian_kms_client = { path = "../client" }
+dotenvy = "0.15"
+futures = "0.3"
+hex = { workspace = true, features = ["serde"] }
+lazy_static = "1.5"
+log = { workspace = true }
+num-bigint-dig = { workspace = true, features = [
+  "std",
+  "rand",
+  "serde",
+  "zeroize",
+] }
+num_cpus = { workspace = true }
+openssl = { workspace = true }
+opentelemetry = "0.23.0"
+opentelemetry-otlp = { version = "0.16.0", features = ["tonic"] }
+opentelemetry-semantic-conventions = { version = "0.15.0" }
+opentelemetry_sdk = { version = "0.23.0", features = ["rt-tokio"] }
+rawsql = "0.1"
+redis = { version = "0.23", features = [
+  "aio",
+  "ahash",
+  "script",
+  "connection-manager",
+  "tokio-comp",
+] }
+# Important: align the rustls version with reqwest rustls dependency
+# When using client certificate authentication, reqwest will use the
+# native-tls crate to create an Identity; this will be different backend
+# implementations depending on the operating system. On linux, it will
+# use openssl
+# The default features is to guarantee that the native-tls crate will be used
+reqwest = { workspace = true, features = ["default", "json"] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sqlx = { version = "0.8.1", default-features = false, features = [
+  "json",
+  "runtime-tokio-native-tls",
+  "mysql",
+  "postgres",
+  "sqlite",
+] }
+strum = { workspace = true, features = ["std", "derive", "strum_macros"] }
+thiserror = { workspace = true }
+time = { workspace = true, features = ["local-offset", "formatting"] }
+tokio = { workspace = true, features = ["full"] }
+toml = "0.8"
+tracing = { workspace = true }
+tracing-opentelemetry = "0.24.0"
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+url = { workspace = true }
+uuid = { workspace = true, features = ["v4"] }
+version-compare = "0.2.0"
+x509-parser = { workspace = true }
+zeroize = { workspace = true }
+
+[dev-dependencies]
+actix-http = "3.6"
+cosmian_logger = { path = "../logger" }
+pem = { workspace = true }
+tempfile = "3.11"
+
+[build-dependencies]
+actix-http = "3.6"
+time = { workspace = true, features = ["local-offset", "formatting"] }
+
+# ------------------------------------------------------------------------------
+# START DEBIAN PACKAGING
+[package.metadata.deb]
+maintainer = "Emmanuel Coste <emmanuel.coste@cosmian.com>"
+maintainer-scripts = "../../pkg/deb/"
+copyright = "2024, Cosmian Tech SAS <tech@cosmian.com>"
+license-file = ["../../LICENSE", "0"]
+changelog = "../../CHANGELOG.md"
+section = "security"
+priority = "optional"
+assets = [
+  [
+    "target/release/cosmian_kms_server",
+    "usr/sbin/cosmian_kms",
+    "500",
+  ],
+  [
+    "../../README.md",
+    "usr/share/doc/cosmian_kms/README",
+    "644",
+  ],
+  [
+    "../../pkg/kms.toml",
+    "etc/cosmian_kms/",
+    "400",
+  ],
+  [
+    "/usr/local/openssl/lib64/ossl-modules/legacy.so",
+    "usr/local/openssl/lib64/ossl-modules/legacy.so",
+    "400",
+  ],
+]
+systemd-units = [
+  { unit-name = "cosmian_kms", unit-scripts = "../../pkg", enable = true, start = false, restart-after-upgrade = false },
+]
+
+[package.metadata.deb.variants.fips]
+features = ["fips"]
+assets = [
+  [
+    "target/release/cosmian_kms_server",
+    "usr/sbin/cosmian_kms",
+    "500",
+  ],
+  [
+    "../../README.md",
+    "usr/share/doc/cosmian_kms/README",
+    "644",
+  ],
+  [
+    "../../pkg/kms.toml",
+    "etc/cosmian_kms/",
+    "400",
+  ],
+  [
+    "/usr/local/openssl/lib64/ossl-modules/fips.so",
+    "usr/local/openssl/lib64/ossl-modules/fips.so",
+    "400",
+  ],
+  [
+    "/usr/local/openssl/ssl/openssl.cnf",
+    "usr/local/openssl/ssl/openssl.cnf",
+    "400",
+  ],
+  [
+    "/usr/local/openssl/ssl/fipsmodule.cnf",
+    "usr/local/openssl/ssl/fipsmodule.cnf",
+    "400",
+  ],
+]
+
+# END DEBIAN PACKAGING
+# ------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------
+# START RPM PACKAGING
+[package.metadata.generate-rpm]
+license = "BUSL-1.1"
+assets = [
+  { source = "target/release/cosmian_kms_server", dest = "/usr/sbin/cosmian_kms", mode = "500" },
+  { source = "/usr/local/openssl/lib64/ossl-modules/legacy.so", dest = "/usr/local/openssl/lib64/ossl-modules/legacy.so", mode = "500" },
+  { source = "../../README.md", dest = "/usr/share/doc/cosmian_kms/README", mode = "644", doc = true },
+  { source = "../../pkg/kms.toml", dest = "/etc/cosmian_kms/kms.toml", mode = "400" },
+  { source = "../../pkg/cosmian_kms.service", dest = "/lib/systemd/system/cosmian_kms.service", mode = "644" },
+]
+auto-req = "no" # do not try to discover .so dependencies
+require-sh = true

@@ -1,0 +1,12 @@
+[
+  {
+    "UUID": "kms",
+    "UID": [
+      {
+        "KMS_PRIVATE_KEY_ID": "",
+        "KMS_PUBLIC_KEY_ID": "",
+        "KMS_CERT_ID": ""
+      }
+    ]
+  }
+]
